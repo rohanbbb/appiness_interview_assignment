@@ -7,6 +7,10 @@ $default-blue-text: #1D5AA6;
 body {
     font-size: 100%;
 }
+.main {
+    overflow: hidden;
+    position: relative;
+}
 .button {
     border: none;
     border-radius: 3.2px;
@@ -163,7 +167,7 @@ body {
     background-image: $button-blue-gradient;
 }
 .plus {
-    margin-top: 4px;
+    margin-top: 11px;
     margin-right: 25px;
 }
 .transplant_type_text {
@@ -195,8 +199,28 @@ body {
     color: #ECECFF;
     background-color: #ECECFF;
 }
+.testimonials {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.testimonials::-webkit-scrollbar {
+    visibility: hidden;
+}
 .testimonial {
     padding: 50px;
+    min-width: 500px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+#left_arrow {
+    margin-right: 5px;
+    cursor: pointer;
+}
+#right_arrow {
+    margin-right: 5px;
+    cursor: pointer;
 }
 .footer {
     background-color: #272727;

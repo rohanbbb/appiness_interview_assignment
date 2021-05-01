@@ -2,6 +2,11 @@ body {
   font-size: 100%;
 }
 
+.main {
+  overflow: hidden;
+  position: relative;
+}
+
 .button {
   border: none;
   border-radius: 3.2px;
@@ -218,7 +223,7 @@ body {
 }
 
 .plus {
-  margin-top: 4px;
+  margin-top: 11px;
   margin-right: 25px;
 }
 
@@ -258,8 +263,35 @@ body {
   background-color: #ECECFF;
 }
 
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.testimonials::-webkit-scrollbar {
+  visibility: hidden;
+}
+
 .testimonial {
   padding: 50px;
+  min-width: 500px;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#left_arrow {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#right_arrow {
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .footer {
